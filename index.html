@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Księgarnia "Słowo w słowo"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="#">Słowo w słowo </a></div>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">📖</button>
+            <ul class="nav-list">
+                <li><a href="#hero">Start</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#offers">Oferta</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1>Księgarnia „Słowo w słowo”</h1>
+                <p>Książki • e-booki • audiobooki</p>
+                <a href="#offers" class="btn">Sprawdź ofertę</a>
+            </div>
+        </section>
+        <!-- O nas -->
+        <section id="about" class="container">
+            <h2>O nas</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                   <p>Nasza księgarnia to wrota do nowej przestrzeni, przestrzeni przepełnionej beztroską chwilą, wypoczynkiem i odcięciem się od rzeczywistości... książki, ebooki oraz audiobooki to coś więcej dla nas niż papier czy słuchawki, to świat który okazuje nam coś innego niż zwyczajna rutyna człowieka.</p> 
+                </div>
+                <div class="about-img">
+                    <img src="zdjecie2.jpg" alt="wnętrze">
+                </div>
+            </div>
+        </section>
+        <!-- oferta -->
+        <section id="offers" class="container">
+            <h2>Nasze propozycje</h2>
+            <div class="offers-grid">
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">📕</div>
+                    <h3>Książki drukowane</h3>
+                    <p>Literatura piękna, kryminały, reportaże, poezja – ponad 10 000 tytułów w magazynie.</p>
+                </article>
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">📱</div>
+                    <h3>E-booki</h3>
+                    <p>Bestsellery w formatach EPUB, MOBI i PDF.</p>
+                </article>
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">🎧</div>
+                    <h3>Audiobooki</h3>
+                    <p>Dla tych, którzy lubią słuchać – w drodze, na spacerze.</p>
+                </article>
+            </div>
+        </section>
+        <!-- kontakt -->
+        <section id="contact" class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><strong>Słowo w słowo</strong><br>
+                    ul. Grzybowska 12<br>
+                    00-132 Warszawa</p>
+                    <p>📞 22 123 45 67<br>
+                    ✉️ kontakt@slowowslowo.pl</p>
+                    <p>Pn–Pt: 8:00–20:00<br>Sob–Nd: Nieczynne</p>
+                </div>
+                <!-- formularz -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" placeholder="Jan Kowalski" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="jan@example.pl" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Napisz do nas..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Wyślij wiadomość</button>
+                        <div id="formFeedback" class="form-message" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 Słowo w słowo • Księgarnia Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
