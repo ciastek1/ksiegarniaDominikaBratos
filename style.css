@@ -13,9 +13,9 @@ body {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible { 
     outline: #e67e22 solid 3px;
-    outline-offset: 4px;
+    outline-offset: 4px; 
 }
 .header {
     background: linear-gradient(90deg, #4a2c2c 0%, #2c3e50 100%);

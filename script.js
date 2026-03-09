@@ -10,7 +10,7 @@ if (toggleBtn && navList) {
   });
   navList.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 768) {  
         navList.classList.remove('show');
         toggleBtn.setAttribute('aria-expanded', 'false');
       }
